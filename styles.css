@@ -1,0 +1,123 @@
+:root {
+  --page-background: #f4eee4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--page-background);
+  color: #1f1713;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mock {
+  position: relative;
+  width: min(100%, 1024px);
+  line-height: 0;
+  background: #fffaf3;
+  box-shadow: 0 0 40px rgba(42, 29, 18, 0.08);
+}
+
+.approved-design {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/*
+  以下は画像上に配置する透明なクリック領域です。
+  キャラクターや画像そのものには一切加工していません。
+*/
+.hotspot-nav a,
+.store-links a,
+.footer-hotspots a {
+  position: absolute;
+  display: block;
+  border-radius: 12px;
+  line-height: normal;
+  outline-offset: 3px;
+}
+
+.hotspot-nav a:focus-visible,
+.store-links a:focus-visible,
+.footer-hotspots a:focus-visible {
+  outline: 3px solid rgba(213, 83, 58, 0.75);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* 上部ナビゲーション */
+.nav-shops    { left: 60.0%; top: 1.1%; width: 8.5%; height: 2.5%; }
+.nav-features { left: 69.1%; top: 1.1%; width: 8.5%; height: 2.5%; }
+.nav-news     { left: 78.5%; top: 1.1%; width: 8.5%; height: 2.5%; }
+.nav-company  { left: 88.2%; top: 1.1%; width: 9.2%; height: 2.5%; }
+
+/* 店舗リンク */
+.store {
+  top: 28.7%;
+  height: 18.5%;
+}
+
+.hamamatsucho { left: 7.2%;  width: 20.2%; }
+.shinjuku     { left: 29.4%; width: 20.2%; }
+.yoyogi       { left: 51.5%; width: 20.2%; }
+.takadanobaba { left: 73.7%; width: 20.2%; }
+
+/* ページ内アンカー */
+.anchor {
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.anchor-shops    { top: 24.0%; }
+.anchor-features { top: 48.0%; }
+.anchor-news     { top: 88.0%; }
+.anchor-company  { top: 90.0%; }
+
+/* フッターナビゲーション */
+.footer-shops    { left: 24.2%; top: 96.2%; width: 8.5%; height: 2.5%; }
+.footer-features { left: 33.6%; top: 96.2%; width: 8.5%; height: 2.5%; }
+.footer-news     { left: 43.0%; top: 96.2%; width: 8.5%; height: 2.5%; }
+.footer-company  { left: 52.5%; top: 96.2%; width: 9.2%; height: 2.5%; }
+
+@media (max-width: 700px) {
+  body {
+    background: #fffaf3;
+  }
+
+  .mock {
+    box-shadow: none;
+  }
+
+  .hotspot-nav {
+    display: none;
+  }
+
+  .store {
+    top: 28.2%;
+    height: 19.2%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

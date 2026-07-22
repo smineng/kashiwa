@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="かしわ4店舗の公式案内モック。浜松町・西新宿・代々木・高田馬場の各店舗へ移動できます。">
+  <title>かしわ｜店舗案内</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page" aria-label="かしわ店舗案内">
+    <div class="mock" id="top">
+      <img
+        class="approved-design"
+        src="assets/kashiwa-approved-design.png"
+        alt="かしわ店舗案内サイトのデザイン"
+        width="1024"
+        height="1536"
+      >
+
+      <!-- ページ内移動用の位置 -->
+      <span class="anchor anchor-shops" id="shops" aria-hidden="true"></span>
+      <span class="anchor anchor-features" id="features" aria-hidden="true"></span>
+      <span class="anchor anchor-news" id="news" aria-hidden="true"></span>
+      <span class="anchor anchor-company" id="company" aria-hidden="true"></span>
+
+      <!-- 上部ナビゲーション -->
+      <nav class="hotspot-nav" aria-label="サイト内ナビゲーション">
+        <a class="nav-shops" href="#shops" aria-label="店舗一覧へ"></a>
+        <a class="nav-features" href="#features" aria-label="こだわりへ"></a>
+        <a class="nav-news" href="#news" aria-label="お知らせへ"></a>
+        <a class="nav-company" href="#company" aria-label="会社概要へ"></a>
+      </nav>
+
+      <!-- 各店舗の公式サイト -->
+      <section class="store-links" aria-label="店舗一覧">
+        <a class="store hamamatsucho"
+           href="https://kashiwa-hamamatsucho.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="かしわ 浜松町 公式サイトへ"></a>
+
+        <a class="store shinjuku"
+           href="https://kashiwa-shinjuku.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="かしわ 西新宿 公式サイトへ"></a>
+
+        <a class="store yoyogi"
+           href="https://kashiwa-yoyogi.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="かしわ 代々木 公式サイトへ"></a>
+
+        <a class="store takadanobaba"
+           href="https://kashiwa-takadanobaba.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="かしわ 高田馬場 公式サイトへ"></a>
+      </section>
+
+      <!-- フッターナビゲーション -->
+      <nav class="footer-hotspots" aria-label="フッターナビゲーション">
+        <a class="footer-shops" href="#shops" aria-label="店舗一覧へ"></a>
+        <a class="footer-features" href="#features" aria-label="こだわりへ"></a>
+        <a class="footer-news" href="#news" aria-label="お知らせへ"></a>
+        <a class="footer-company" href="#company" aria-label="会社概要へ"></a>
+      </nav>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
